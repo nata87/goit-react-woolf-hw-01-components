@@ -1,5 +1,4 @@
 const Profile = (props) => {
-  console.log(props);
   return (
 <div class="profile">
   <div class="description">
