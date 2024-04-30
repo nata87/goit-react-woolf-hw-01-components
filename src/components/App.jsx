@@ -1,12 +1,15 @@
 import Profile from './profile/profile';
 import avatar from '../avatar.jpg';
 import Statistics from './statistics/statistics';
+import FriendList from './friendList/friendList';
+import friends from 'components/friendList/friends';
+import TransactionHistory from './transactionHistory/transactionHistory';
+import transactions from './transactionHistory/transactions';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -37,6 +40,10 @@ export const App = () => {
           mp4: 47,
         }}
       />
+
+      <FriendList friends={friends} />
+
+      <TransactionHistory transactions={transactions} />
     </div>
   );
 };

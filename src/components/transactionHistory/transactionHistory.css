@@ -1,0 +1,17 @@
+.transaction-history > tbody tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.transaction-history {
+  font-size: 32px;
+  box-shadow: 0 0 10px grey;
+}
+
+.transaction-history > thead th {
+  background-color: aqua;
+  color: white;
+}
+
+.transaction-history th {
+  padding: 20px 50px;
+}
