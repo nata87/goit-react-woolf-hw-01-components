@@ -1,24 +1,24 @@
 const Statistics = props => {
   return (
-    <section class="statistics">
-      <h2 class="title">{props.title}</h2>
+    <section className="statistics">
+      <h2 className="title">{props.title}</h2>
 
-      <ul class="stat-list">
-        <li class="item">
-          <span class="label">.docx</span>
-          <span class="percentage">{props.stats.docx}%</span>
+      <ul className="stat-list">
+        <li className="item">
+          <span className="label">.docx</span>
+          <span className="percentage">{props.stats.docx}%</span>
         </li>
-        <li class="item">
-          <span class="label">.mp3</span>
-          <span class="percentage">{props.stats.mp3}%</span>
+        <li className="item">
+          <span className="label">.mp3</span>
+          <span className="percentage">{props.stats.mp3}%</span>
         </li>
-        <li class="item">
-          <span class="label">.pdf</span>
-          <span class="percentage">{props.stats.pdf}%</span>
+        <li className="item">
+          <span className="label">.pdf</span>
+          <span className="percentage">{props.stats.pdf}%</span>
         </li>
-        <li class="item">
-          <span class="label">.mp4</span>
-          <span class="percentage">{props.stats.mp4}%</span>
+        <li className="item">
+          <span className="label">.mp4</span>
+          <span className="percentage">{props.stats.mp4}%</span>
         </li>
       </ul>
     </section>

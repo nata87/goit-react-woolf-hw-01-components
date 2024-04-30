@@ -2,9 +2,8 @@ import Transaction from './transaction';
 import './transactionHistory.css';
 
 const TransactionHistory = props => {
-  console.log(props);
   return (
-    <table class="transaction-history">
+    <table className="transaction-history">
       <thead>
         <tr>
           <th>Type</th>
@@ -21,6 +20,7 @@ const TransactionHistory = props => {
               type={transaction.type}
               amount={transaction.amount}
               currency={transaction.currency}
+              key={transaction.id}
             />
           );
         })}

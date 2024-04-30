@@ -1,12 +1,12 @@
 const FriendListItem = props => {
   return (
-    <li class="item">
+    <li className="item">
       <span
-        class="status"
+        className="status"
         style={{ backgroundColor: props.isOnline ? 'green' : 'red' }}
       ></span>
-      <img class="avatar" src={props.avatar} alt="User avatar" width="48" />
-      <p class="name">{props.name}</p>
+      <img className="avatar" src={props.avatar} alt="User avatar" width="48" />
+      <p className="name">{props.name}</p>
     </li>
   );
 };
