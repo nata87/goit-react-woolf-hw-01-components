@@ -13,3 +13,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  margin: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+  font-size: 20px;
+  width: 400px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.avatar {
+  margin-bottom: 30px;
+  height: 300px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.tag,
+.location,
+.label {
+  color: grey;
+}
+
+.stats {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.stats > li {
+  display: flex;
+  border: 1px solid black;
+  padding: 20px;
+  width: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quantity {
+  font-size: 24px;
+}
