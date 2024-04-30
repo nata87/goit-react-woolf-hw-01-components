@@ -1,3 +1,6 @@
+import Profile from "./profile/profile";
+import avatar from "../avatar.jpg"
+
 export const App = () => {
   return (
     <div
@@ -10,7 +13,19 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      
+      <Profile
+        username="Pustelnyk Nataliya"
+        tag="@pnataliya"
+        location= "Forli, Italy"
+        avatar={avatar}
+        stats={{
+          followers: 1_000_000,
+          views: 800_000,
+          likes: 500_500,
+        }}
+      />
+
     </div>
   );
 };
