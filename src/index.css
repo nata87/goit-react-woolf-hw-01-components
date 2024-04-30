@@ -123,3 +123,47 @@ p {
   background-color: orange;
   border-bottom-right-radius: 10px;
 }
+
+.friend-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.friend-list > .item {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+  font-size: 20px;
+  width: 400px;
+  background-color: unset;
+  color: black;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.friend-list > .item > .avatar {
+  width: 50px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.friend-list > .item > .avatar::before {
+  content: '•';
+  margin-right: 5px;
+  color: blue;
+  position: absolute;
+  left: -20px;
+}
+
+.status {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
