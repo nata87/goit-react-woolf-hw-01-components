@@ -1,0 +1,10 @@
+.history {
+  font-size: 24px;
+  box-shadow: 0 0 10px grey;
+}
+
+.header {
+  background-color: aqua;
+  color: white;
+  padding: 20px 50px;
+}

@@ -1,0 +1,11 @@
+.row:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.header {
+  padding: 20px 50px;
+}
+
+.row {
+  color: gray;
+}

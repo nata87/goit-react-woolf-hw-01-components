@@ -1,9 +1,11 @@
+import styles from './transaction.module.css';
+
 const Transaction = props => {
   return (
-    <tr id={props.id}>
-      <th> {props.type}</th>
-      <th>{props.amount}</th>
-      <th>{props.currency}</th>
+    <tr className={styles.row} id={props.id}>
+      <th className={styles.header}> {props.type}</th>
+      <th className={styles.header}>{props.amount}</th>
+      <th className={styles.header}>{props.currency}</th>
     </tr>
   );
 };

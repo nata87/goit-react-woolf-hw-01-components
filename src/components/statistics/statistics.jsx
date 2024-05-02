@@ -1,24 +1,26 @@
+import styles from './statistics.module.css';
+
 const Statistics = props => {
   return (
-    <section className="statistics">
-      <h2 className="title">{props.title}</h2>
+    <section className={styles.statistics}>
+      <h2 className={styles.title}>{props.title}</h2>
 
-      <ul className="stat-list">
-        <li className="item">
-          <span className="label">.docx</span>
-          <span className="percentage">{props.stats.docx}%</span>
+      <ul className={styles.statList}>
+        <li className={styles.item}>
+          <span className={styles.label}>.docx</span>
+          <span className={styles.percentage}>{props.stats.docx}%</span>
         </li>
-        <li className="item">
-          <span className="label">.mp3</span>
-          <span className="percentage">{props.stats.mp3}%</span>
+        <li className={styles.item}>
+          <span className={styles.label}>.mp3</span>
+          <span className={styles.percentage}>{props.stats.mp3}%</span>
         </li>
-        <li className="item">
-          <span className="label">.pdf</span>
-          <span className="percentage">{props.stats.pdf}%</span>
+        <li className={styles.item}>
+          <span className={styles.label}>.pdf</span>
+          <span className={styles.percentage}>{props.stats.pdf}%</span>
         </li>
-        <li className="item">
-          <span className="label">.mp4</span>
-          <span className="percentage">{props.stats.mp4}%</span>
+        <li className={styles.item}>
+          <span className={styles.label}>.mp4</span>
+          <span className={styles.percentage}>{props.stats.mp4}%</span>
         </li>
       </ul>
     </section>
