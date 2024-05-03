@@ -1,11 +1,11 @@
 import styles from './transaction.module.css';
 
-const Transaction = props => {
+const Transaction = ({ id, type, amount, currency }) => {
   return (
-    <tr className={styles.row} id={props.id}>
-      <th className={styles.header}> {props.type}</th>
-      <th className={styles.header}>{props.amount}</th>
-      <th className={styles.header}>{props.currency}</th>
+    <tr className={styles.row} id={id}>
+      <th className={styles.header}> {type}</th>
+      <th className={styles.header}>{amount}</th>
+      <th className={styles.header}>{currency}</th>
     </tr>
   );
 };

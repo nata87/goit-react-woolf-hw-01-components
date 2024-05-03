@@ -1,12 +1,14 @@
 import Profile from './profile/profile';
-import avatar from '../avatar.jpg';
 import Statistics from './statistics/statistics';
 import FriendList from './friendList/friendList';
-import friends from 'components/friendList/friends';
 import TransactionHistory from './transactionHistory/transactionHistory';
-import transactions from './transactionHistory/transactions';
+import profile from './profile/user.json';
+import data from './statistics/data.json';
+import friends from './friendList/friends.json';
+import transactions from './transactionHistory/transactions.json';
 
 export const App = () => {
+  const { username, tag, location, avatar, stats } = profile;
   return (
     <div
       style={{
@@ -20,26 +22,14 @@ export const App = () => {
       }}
     >
       <Profile
-        username="Pustelnyk Nataliya"
-        tag="@pnataliya"
-        location="Forli, Italy"
+        username={username}
+        tag={tag}
+        location={location}
         avatar={avatar}
-        stats={{
-          followers: 1_000_000,
-          views: 800_000,
-          likes: 500_500,
-        }}
+        stats={stats}
       />
 
-      <Statistics
-        title="Upload stats"
-        stats={{
-          docx: 32,
-          pdf: 4,
-          mp3: 17,
-          mp4: 47,
-        }}
-      />
+      <Statistics title="Upload stats" stats={data} />
 
       <FriendList friends={friends} />
 
